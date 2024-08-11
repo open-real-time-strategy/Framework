@@ -1,0 +1,12 @@
+{
+  "name": "openrts-server",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only main.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "ts-node-dev": "^1.1.6",
+    "@types/node": "^17.0.13"
+  }
+}
