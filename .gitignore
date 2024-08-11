@@ -1,0 +1,7 @@
+# IDE-related files
+#
+.idea/
+
+# Build-related files
+#
+build/
