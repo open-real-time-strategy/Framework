@@ -10,3 +10,11 @@ build/
 #
 server/node_modules/
 client/node_modules/
+
+# TLS certificates
+#
+*.pem
+
+# Debug files
+#
+debug.sh

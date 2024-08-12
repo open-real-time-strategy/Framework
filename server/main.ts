@@ -21,9 +21,18 @@ const stateHeart = makeHeart([
 const beat = makeBeat([stateHeart], 1000);
 const heartbeats = makeHeartBeats(beat);
 
+
 const server = new Server({
     debug: debug,
     heartbeats: heartbeats,
+    socketHost: "localhost",
+    socketPort: 1337,
+    http2Port: 1338,
+    http2Certificate: {
+        key: "/home/romano/WebstormProjects/OpenRTS/server/src/localhost-key.pem",
+        cert: "/home/romano/WebstormProjects/OpenRTS/server/src/localhost.pem",
+    }
 });
 server.start();
+
 
