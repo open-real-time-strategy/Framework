@@ -14,8 +14,6 @@ const stateHeart = makeHeart([
 ]);
 
 
-
-
 // Create the heartbeats and start the server.
 //
 const beat = makeBeat([stateHeart], 1000);
@@ -29,8 +27,8 @@ const server = new Server({
     socketPort: 1337,
     http2Port: 1338,
     http2Certificate: {
-        key: "/home/romano/WebstormProjects/OpenRTS/server/src/localhost-key.pem",
-        cert: "/home/romano/WebstormProjects/OpenRTS/server/src/localhost.pem",
+        key: "/home/romano/WebstormProjects/OpenRTS/localhost-key.pem",
+        cert: "/home/romano/WebstormProjects/OpenRTS/localhost.pem",
     }
 });
 server.start();
